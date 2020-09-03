@@ -62,8 +62,8 @@ $(function() {
                     return layer.msg('登录失败，请输入正确的用户名和密码')
                 }
                 layer.msg('登录成功')
-                    // localStorage.setItem('token', res.token)
-                    // location.href = '/home/index.html'
+                localStorage.setItem('token', res.token)
+                location.href = '/home/index.html'
             }
         })
     })
